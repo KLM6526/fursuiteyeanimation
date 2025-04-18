@@ -31,7 +31,7 @@ def blink_animation(display, eye_open_image, eye_closed_image, blink_count=5, bl
 # 메인 함수
 if __name__ == "__main__":
     # 디스플레이 크기 설정
-    display_size = (240, 240)
+    display_size = (480, 480)
 
     # 이미지 준비
     eye_open_path = "eye_open.png"
@@ -77,29 +77,22 @@ if __name__ == "__main__":
         key = get_key()
         if key.lower() == "h":
             blinking = False  # 깜빡임 중지
-            print("행복한 눈 출력!")
             display.show(happy_eye_image)
         elif key.lower() == "s":
             blinking = False
-            print("슬픈 눈 출력!")
             display.show(sad_eye_image)
         elif key.lower() == "a":
             blinking = False
-            print("화난 눈 출력!")
             display.show(angry_eye_image)
         elif key.lower() == "u":
             blinking = False
-            print("놀란 눈 출력!")
             display.show(surprised_eye_image)
         elif key.lower() == "c":
             blinking = False
-            print("우는 눈 출력!")
             display.show(crying_eye_image)
         elif key.lower() == "e":
             blinking = False
-            print("신난 눈 출력!")
             display.show(excited_eye_image)
         elif key.lower() == "w":
             blinking = False
-            print("머쓱한 눈 출력!")
             display.show(awkward_eye_image)
